@@ -125,9 +125,9 @@ class CustomerAttendingShowsSpec extends Specification {
 
 
 
-//        ticketInputTopic.pipeInput(ticket1.id(), ticket1)
-//        ticketInputTopic.pipeInput(ticket2.id(), ticket2)
-//        ticketInputTopic.pipeInput(ticket3.id(), ticket3)
+        ticketInputTopic.pipeInput(ticket1.id(), ticket1)
+        ticketInputTopic.pipeInput(ticket2.id(), ticket2)
+        ticketInputTopic.pipeInput(ticket3.id(), ticket3)
 
         and: 'reading the output records'
         def outputRecords = outputTopic.readRecordsToList()
