@@ -1,4 +1,4 @@
-package org.improving.workshop.exercises.stateful
+package org.improving.workshop.project
 
 
 import org.apache.kafka.common.serialization.Serdes
