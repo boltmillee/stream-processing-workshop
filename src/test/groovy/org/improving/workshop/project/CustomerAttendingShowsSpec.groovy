@@ -90,7 +90,7 @@ class CustomerAttendingShowsSpec extends Specification {
 
         and: 'address of these customers'
         def address1 = new Address("addr-123", "cust-123", "cd", "HOME", "111 1st St", "Apt 2", "Madison", "WI", "55555", "1233", "USA", 0L, 0L)
-        def address2 = new Address("addr-456", "cust-456", "cd", "HOME", "111 1st St", "Apt 2", "Seattle", "WA", "55553", "1234", "USA", 0L, 0L)
+        def address2 = new Address("addr-456", "cust-456", "cd", "HOME", "111 1st St", "Apt 2", "Dallas", "TX", "55553", "1234", "USA", 0L, 0L)
         def address3 = new Address("addr-567", "cust-567", "cd", "HOME", "111 21st St", "Apt 3", "Madison", "WI", "55554", "1235", "USA", 0L, 0L)
 
         and: 'address of events'
@@ -133,7 +133,7 @@ class CustomerAttendingShowsSpec extends Specification {
         def outputRecords = outputTopic.readRecordsToList()
 
         then: 'the expected number of records were received'
-        outputRecords.size() == 1
+        outputRecords.size() == 2
     }
 }
 
